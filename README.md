@@ -9,8 +9,10 @@ ordinal numbers.
 
 
 ### Install
-`npm install number-to-words`
-
+```console
+$ npm install number-to-words
+$ yarn add number-to-words
+```
 
 ### API
 
@@ -18,33 +20,33 @@ ordinal numbers.
 Converts an integer into a string with an ordinal postfix.
 If number is decimal, the decimals will be removed.
 ```js
-var converter = require('number-to-words');
-converter.toOrdinal(21); // => “21st”
+import { toOrdinal } from 'number-to-words';
+toOrdinal(21); // => “21st”
 ```
 
 #### `toWords(number)`
 Converts an integer into words.
 If number is decimal, the decimals will be removed.
 ```js
-var converter = require('number-to-words');
-converter.toWords(13); // => “thirteen”
+import { toWords } from 'number-to-words';
+toWords(13); // => “thirteen”
 
 // Decimal numbers:
-converter.toWords(2.9); // => “two”
+toWords(2.9); // => “two”
 
 // Negative numbers:
-converter.toWords(-3); // => “minus three”
+toWords(-3); // => “minus three”
 
 // Large numbers:
-converter.toWords(9007199254740992); // => “nine quadrillion, seven trillion, one hundred ninety-nine billion, two hundred fifty-four million, seven hundred forty thousand, nine hundred ninety-two”
+toWords(9007199254740992); // => “nine quadrillion, seven trillion, one hundred ninety-nine billion, two hundred fifty-four million, seven hundred forty thousand, nine hundred ninety-two”
 ```
 
 #### `toWordsOrdinal(number)`
 Converts a number into ordinal words.
 If number is decimal, the decimals will be removed.
 ```js
-var converter = require('number-to-words');
-converter.toWordsOrdinal(21); // => “twenty-first”
+import { toWordsOrdinal } from 'number-to-words';
+toWordsOrdinal(21); // => “twenty-first”
 ```
 
 
@@ -53,11 +55,11 @@ Contributions, comments and/or bug reports are much appreciated. Open a pull req
 [issues page](https://github.com/marlun78/number-to-words/issues). Thanks!
 
 
-### Upcoming v2.0
-See [roadmap](ROADMAP.md) for details.
-
-
 ### Change Log
+
+##### Version 2.0.0 (ES6 module)
+- Upgraded project to ES6 module
+- Replaced tests and build steps
 
 ##### Version 1.2.4 (final 1.x release)
 - Bug fix in `toOrdinal`. When passed -11, -12 and -13 it returned an incorrect suffix ([#15](https://github.com/marlun78/number-to-words/issues/15)). Thanks to @dmrzn.
