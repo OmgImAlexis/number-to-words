@@ -1,7 +1,9 @@
-'use strict'; 
+import {default as toOrdinal} from './to-ordinal';
+import {default as toWords} from './to-words';
+import {default as toWordsOrdinal} from './to-words-ordinal';
 
-module.exports = {
-    toOrdinal: require('./toOrdinal'),
-    toWords: require('./toWords'),
-    toWordsOrdinal: require('./toWordsOrdinal')
+export default {
+	toOrdinal,
+	toWords,
+	toWordsOrdinal
 };
