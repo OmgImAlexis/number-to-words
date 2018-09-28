@@ -5,7 +5,7 @@ import toWords from '../src/to-words';
 import toWordsOrdinal from '../src/to-words-ordinal';
 
 test('should expose a toOrdinal method', t => {
-    t.is(index.toOrdinal, toOrdinal);
+	t.is(index.toOrdinal, toOrdinal);
 });
 
 test('should expose a toWords method', t => {
@@ -13,5 +13,5 @@ test('should expose a toWords method', t => {
 });
 
 test('should expose a toWordsOrdinal method', t => {
-    t.is(index.toWordsOrdinal, toWordsOrdinal);
+	t.is(index.toWordsOrdinal, toWordsOrdinal);
 });

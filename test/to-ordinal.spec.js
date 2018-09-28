@@ -41,6 +41,6 @@ test('should throw a RangeError if input is greater or lesser than MAX_SAFE_INTE
 		toOrdinal(unsafe);
 	}, /Input is not a safe number/);
 	t.throws(() => {
-        toOrdinal(-unsafe);
+		toOrdinal(-unsafe);
 	}, /Input is not a safe number/);
 });
